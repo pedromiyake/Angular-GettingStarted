@@ -26,7 +26,7 @@ import { ProductDetailGuard } from './products/product-detail.guard';
       },
       {path: 'welcome', component: WelcomeComponent},
       {path: '', redirectTo: 'welcome', pathMatch: 'full'},
-      // {path: '**', component: PageNotFoundComponent},
+      {path: '**', redirectTo: 'welcome', pathMatch: 'full'},
     ])
   ],
   declarations: [
